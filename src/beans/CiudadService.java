@@ -23,4 +23,15 @@ public List<Ciudad> ciudades(){
 	
 	return listadoCiudades; 
 }
+
+public Ciudad buscarCiudad(String ciudad){
+	Ciudad objetoCiudad=null;
+	for (Ciudad c: listadoCiudades) {
+		if(c.getNombre().equals(ciudad)) {
+			objetoCiudad=c;
+			break;
+		}
+	}
+	return objetoCiudad;
+}
 }

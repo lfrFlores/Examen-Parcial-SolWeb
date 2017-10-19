@@ -62,8 +62,10 @@ pageContext.setAttribute("listCiudades", ciudades);
 			</tr>
 		</c:forEach>
 	</table>
-
 </div>
-
+<br><br>
+<form method="POST" action="Formulario.jsp">	
+		<button type="submit">Ver</button>	
+</form>
 </body>
 </html>
