@@ -15,6 +15,9 @@
 	td{
 		text-align: center;
 	}
+	h1{
+		color: blue;
+	}
 </style>
 
 </head>
