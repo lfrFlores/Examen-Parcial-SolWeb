@@ -25,22 +25,21 @@ public class sf extends HttpServlet {
 		Ciudad objetoCiudad = null;
 		CiudadService cs= new CiudadService();
 		cs.ciudades();			
-		objetoCiudad = cs.buscarCiudad(ciudad);
-		response.getWriter().append(""
-		+ "<table style='width:100%' border=1>"
-				+ " <tr>"
-					+ " <th>"
-					+ "	Id"
-					+ "	</th>"
-					+ "<th>"
-					+ "					Nombre"
-					+ "	</th>"
-					+ "	<th>"
-					+ "	Poblacion"
-					+ "	</th>"
-				+ "</tr>");
-		
+		objetoCiudad = cs.buscarCiudad(ciudad);		
 		if (objetoCiudad!=null) {
+			response.getWriter().append(""
+					+ "<table style='width:100%' border=1>"
+							+ " <tr>"
+								+ " <th>"
+								+ "	Id"
+								+ "	</th>"
+								+ "<th>"
+								+ "					Nombre"
+								+ "	</th>"
+								+ "	<th>"
+								+ "	Poblacion"
+								+ "	</th>"
+							+ "</tr>");
 			response.getWriter().append(""
 					+ "<tr>"
 						+ "<td>"+objetoCiudad.getId()+"</td> ");

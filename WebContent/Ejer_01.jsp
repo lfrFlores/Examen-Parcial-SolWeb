@@ -18,6 +18,9 @@
 	h1{
 		color: blue;
 	}
+	button{
+	color: red;
+	}
 </style>
 
 </head>
@@ -65,7 +68,7 @@ pageContext.setAttribute("listCiudades", ciudades);
 </div>
 <br><br>
 <form method="POST" action="Formulario.jsp">	
-		<button type="submit">Ver</button>	
+		<button type="submit">Ir A Buscar Un Producto</button>	
 </form>
 </body>
 </html>
